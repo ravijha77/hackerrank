@@ -1,0 +1,10 @@
+input()
+M=set(map(int,input().strip().split()))
+input()
+N=set(map(int,input().strip().split()))
+x=(M.union(N)).difference(M.intersection(N))
+t=list(x)
+y=len(t)
+t.sort()
+for i in range(0,y):
+    print(t[i])
